@@ -9,7 +9,7 @@ import sendEmail from "./controllers/sendEmail.js";
 //APP USE
 const app = express();
 const PORT = process.env.PORT || 8080;
-app.use(express.static(process.cwd() + "\\styles"));
+app.use(express.static(process.cwd() + "/styles"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
