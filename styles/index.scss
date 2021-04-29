@@ -1,0 +1,100 @@
+body {
+  .navbar {
+    display: flexbox;
+    justify-content: space-between;
+
+    p {
+      .navbar-brand {
+        font-family: "Zen Dots", cursive;
+        color: #040036;
+      }
+
+      .by {
+        font-style: oblique;
+        color: #040036;
+      }
+    }
+
+    #navigation-nav {
+      display: inline-block;
+
+      a {
+        svg {
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  .jumbotron {
+    background-color: #2d2782;
+    color: white;
+    font-family: "Raleway", sans-serif;
+
+    .container {
+      form {
+        button {
+          background-color: #5f5b97;
+          border: 1px grey solid;
+          opacity: 0.5;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  #successfully {
+    p {
+      font-family: "Zen Dots", cursive;
+      font-size: 32px;
+      color: #040036;
+      margin-top: 30px;
+    }
+  }
+
+  #products-list {
+    h2 {
+      font-family: "Zen Dots", cursive;
+      color: #040036;
+      margin: 20px;
+    }
+
+    .table-responsive {
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+
+      table {
+        counter-reset: rowNumber;
+
+        tbody {
+          tr {
+            counter-increment: rowNumber;
+            td {
+              height: 70px;
+              box-sizing: border-box;
+
+              &:first-child::before {
+                content: counter(rowNumber);
+              }
+              img {
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-family: "Zen Dots", cursive;
+      color: #040036;
+      margin: 20px;
+    }
+  }
+}

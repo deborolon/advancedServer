@@ -1,0 +1,34 @@
+<div class="container" id="products-list">
+  <h2>Lista de productos</h2>
+  <br>
+  {{#if products.length}}
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Imagen</th>
+        </tr>
+      </thead>
+      {{#each products}}
+      <tbody>
+        <tr>
+          <td></td>
+          <td>{{nombre}}</td>
+          <td>{{descripcion}}</td>
+          <td>${{precio}}</td>
+          <td>
+            <img src="{{url}}" alt="img">
+          </td>
+        </tr>
+      </tbody>
+      {{/each}}
+    </table>
+  </div>
+  {{else}}
+  <h3>No se encontraron datos</h3>
+  {{/if}}
+</div>
