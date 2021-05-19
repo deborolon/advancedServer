@@ -1,100 +1,157 @@
 body {
-  .navbar {
-    display: flexbox;
-    justify-content: space-between;
 
-    p {
-      .navbar-brand {
-        font-family: "Zen Dots", cursive;
-        color: #040036;
-      }
+  .cover-container{
+    margin: 20px;
 
-      .by {
-        font-style: oblique;
-        color: #040036;
-      }
-    }
+    .masthead{
+      margin: 10px 10px 30px 0px;
 
-    #navigation-nav {
-      display: inline-block;
-
-      a {
-        svg {
-          &:hover {
-            opacity: 0.5;
+      .inner{
+        margin: 10px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+        .masthead-brand{
+          color: #2A1852;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 32px;
+          font-weight: 900;
+          margin-bottom: 10px;
+          text-shadow: 5px 5px 3px rgba(120, 70, 235, 0.5);;
+        }
+      
+        .nav-masthead .nav-link{
+          display: inline-block;
+          text-decoration: none;
+          box-sizing: border-box;
+          color:#4D406B;
+          font-family: "Raleway", sans-serif;
+          font-weight: 900;
+          font-size: 16px;
+          border-bottom: 4px solid transparent;
+          margin-left: 15px;
+          padding: 10px 0;
+    
+          &:hover{
+            border-bottom: 4px solid #512F9E;
+            color: #512F9E;
           }
         }
       }
     }
-  }
-
-  .jumbotron {
-    background-color: #2d2782;
-    color: white;
-    font-family: "Raleway", sans-serif;
-
-    .container {
-      form {
-        button {
-          background-color: #5f5b97;
-          border: 1px grey solid;
-          opacity: 0.5;
-
-          &:hover {
-            opacity: 1;
-          }
-        }
-      }
-    }
-  }
-
-  #successfully {
-    p {
-      font-family: "Zen Dots", cursive;
-      font-size: 32px;
-      color: #040036;
-      margin-top: 30px;
-    }
-  }
-
-  #products-list {
-    h2 {
-      font-family: "Zen Dots", cursive;
-      color: #040036;
-      margin: 20px;
-    }
-
-    .table-responsive {
+  
+    .jumbotron {
+      background-color: #EEE0FF;
+      color: #4D406B;
       font-family: "Raleway", sans-serif;
-      font-size: 18px;
+      margin-top: 20px;
+  
+      .container {
+        .display-4{
+          font-size: 36px;
+          font-weight: 600;
+        }
 
-      table {
-        counter-reset: rowNumber;
-
-        tbody {
-          tr {
-            counter-increment: rowNumber;
-            td {
-              height: 70px;
-              box-sizing: border-box;
-
-              &:first-child::before {
-                content: counter(rowNumber);
-              }
-              img {
-                width: 50px;
-                height: 50px;
-              }
+        form {
+          button {
+            background-color: #4D406B;
+            border: 1px black solid;
+            opacity: 0.5;
+  
+            &:hover {
+              opacity: 1;
             }
           }
         }
       }
     }
 
-    h3 {
-      font-family: "Zen Dots", cursive;
-      color: #040036;
-      margin: 20px;
+    .footer{
+      width: 100%;
+      height: 60px;
+
+      .row{
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .text-group{
+        text-align: center;
+        font-family: "Zen Dots", cursive;
+        font-size: 18px;
+        color: #2A1852;
+      }
+
+      .icons{
+        text-align: center;
+
+        a{
+          &:hover{
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  
+    #successfully {
+      p {
+        font-family: "Zen Dots", cursive;
+        font-size: 32px;
+        color: #040036;
+        margin-top: 30px;
+      }
+    }
+  
+    #products-list {
+      h2 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 900;
+        color: #4D406B;
+        margin: 20px;
+      }
+  
+      .table-responsive {
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        table {
+          counter-reset: rowNumber;
+          thead{
+            color: #4D406B;
+            font-size: 18px;
+          }
+
+          tbody {
+            tr {
+              counter-increment: rowNumber;
+              td {
+                height: 70px;
+                box-sizing: border-box;
+                color: #4D406B;
+                font-size: 16px;
+                font-weight: 800;
+  
+                &:first-child::before {
+                  content: counter(rowNumber);
+                }
+                img {
+                  width: 50px;
+                  height: 50px;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      h3 {
+        font-family: "Zen Dots", cursive;
+        color: #4D406B;
+        margin: 20px;
+      }
     }
   }
 }

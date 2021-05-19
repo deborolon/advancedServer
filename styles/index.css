@@ -1,88 +1,157 @@
-body .navbar {
-  display: flexbox;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+body .cover-container {
+  margin: 20px;
 }
 
-body .navbar p .navbar-brand {
-  font-family: "Zen Dots", cursive;
-  color: #040036;
+body .cover-container .masthead {
+  margin: 10px 10px 30px 0px;
 }
 
-body .navbar p .by {
-  font-style: oblique;
-  color: #040036;
+body .cover-container .masthead .inner {
+  margin: 10px;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-body .navbar #navigation-nav {
+body .cover-container .masthead .inner .masthead-brand {
+  color: #2A1852;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-shadow: 5px 5px 3px rgba(120, 70, 235, 0.5);
+}
+
+body .cover-container .masthead .inner .nav-masthead .nav-link {
   display: inline-block;
-}
-
-body .navbar #navigation-nav a svg:hover {
-  opacity: 0.5;
-}
-
-body .jumbotron {
-  background-color: #2d2782;
-  color: white;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #4D406B;
   font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  border-bottom: 4px solid transparent;
+  margin-left: 15px;
+  padding: 10px 0;
 }
 
-body .jumbotron .container form button {
-  background-color: #5f5b97;
-  border: 1px grey solid;
+body .cover-container .masthead .inner .nav-masthead .nav-link:hover {
+  border-bottom: 4px solid #512F9E;
+  color: #512F9E;
+}
+
+body .cover-container .jumbotron {
+  background-color: #EEE0FF;
+  color: #4D406B;
+  font-family: "Raleway", sans-serif;
+  margin-top: 20px;
+}
+
+body .cover-container .jumbotron .container .display-4 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+body .cover-container .jumbotron .container form button {
+  background-color: #4D406B;
+  border: 1px black solid;
   opacity: 0.5;
 }
 
-body .jumbotron .container form button:hover {
+body .cover-container .jumbotron .container form button:hover {
   opacity: 1;
 }
 
-body #successfully p {
+body .cover-container .footer {
+  width: 100%;
+  height: 60px;
+}
+
+body .cover-container .footer .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .cover-container .footer .text-group {
+  text-align: center;
+  font-family: "Zen Dots", cursive;
+  font-size: 18px;
+  color: #2A1852;
+}
+
+body .cover-container .footer .icons {
+  text-align: center;
+}
+
+body .cover-container .footer .icons a:hover {
+  opacity: 0.6;
+}
+
+body .cover-container #successfully p {
   font-family: "Zen Dots", cursive;
   font-size: 32px;
   color: #040036;
   margin-top: 30px;
 }
 
-body #products-list h2 {
-  font-family: "Zen Dots", cursive;
-  color: #040036;
+body .cover-container #products-list h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #4D406B;
   margin: 20px;
 }
 
-body #products-list .table-responsive {
+body .cover-container #products-list .table-responsive {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
 }
 
-body #products-list .table-responsive table {
+body .cover-container #products-list .table-responsive table {
   counter-reset: rowNumber;
 }
 
-body #products-list .table-responsive table tbody tr {
+body .cover-container #products-list .table-responsive table thead {
+  color: #4D406B;
+  font-size: 18px;
+}
+
+body .cover-container #products-list .table-responsive table tbody tr {
   counter-increment: rowNumber;
 }
 
-body #products-list .table-responsive table tbody tr td {
+body .cover-container #products-list .table-responsive table tbody tr td {
   height: 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #4D406B;
+  font-size: 16px;
+  font-weight: 800;
 }
 
-body #products-list .table-responsive table tbody tr td:first-child::before {
+body .cover-container #products-list .table-responsive table tbody tr td:first-child::before {
   content: counter(rowNumber);
 }
 
-body #products-list .table-responsive table tbody tr td img {
+body .cover-container #products-list .table-responsive table tbody tr td img {
   width: 50px;
   height: 50px;
 }
 
-body #products-list h3 {
+body .cover-container #products-list h3 {
   font-family: "Zen Dots", cursive;
-  color: #040036;
+  color: #4D406B;
   margin: 20px;
 }
 /*# sourceMappingURL=index.css.map */
