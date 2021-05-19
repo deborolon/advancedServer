@@ -1,5 +1,5 @@
 body .cover-container {
-  margin: 20px;
+  margin: 0px;
 }
 
 body .cover-container .masthead {
@@ -15,17 +15,23 @@ body .cover-container .masthead .inner {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 body .cover-container .masthead .inner .masthead-brand {
-  color: #2A1852;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 32px;
-  font-weight: 900;
-  margin-bottom: 10px;
-  text-shadow: 5px 5px 3px rgba(120, 70, 235, 0.5);
+  color: black;
+  font-family: "Monoton", cursive;
+  font-size: 46px;
+}
+
+body .cover-container .masthead .inner .masthead-brand .server {
+  font-family: "Rock Salt", cursive;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 body .cover-container .masthead .inner .nav-masthead .nav-link {
@@ -33,45 +39,85 @@ body .cover-container .masthead .inner .nav-masthead .nav-link {
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #4D406B;
-  font-family: "Raleway", sans-serif;
+  color: black;
+  font-family: "Poiret One", cursive;
   font-weight: 900;
   font-size: 16px;
   border-bottom: 4px solid transparent;
   margin-left: 15px;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 body .cover-container .masthead .inner .nav-masthead .nav-link:hover {
-  border-bottom: 4px solid #512F9E;
-  color: #512F9E;
+  border-bottom: 4px solid #2f00ff;
+  color: #2f00ff;
+}
+
+body .cover-container .carrito {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: block;
+  float: right;
+  margin: 30px 100px 0px 0px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 
 body .cover-container .jumbotron {
-  background-color: #EEE0FF;
-  color: #4D406B;
-  font-family: "Raleway", sans-serif;
-  margin-top: 20px;
+  background-color: rgba(68, 25, 255, 0.8);
+  -webkit-border-top-right-radius: 300px;
+  -webkit-border-bottom-right-radius: 300px;
+  -moz-border-radius-topright: 300px;
+  -moz-border-radius-bottomright: 300px;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  color: white;
+  font-family: "Poiret One", cursive;
+  font-size: 18px;
+  margin-top: 70px;
 }
 
 body .cover-container .jumbotron .container .display-4 {
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+body .cover-container .jumbotron .container form .form-row {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body .cover-container .jumbotron .container form button {
-  background-color: #4D406B;
-  border: 1px black solid;
-  opacity: 0.5;
+  background-color: #2f00ff;
+  color: white;
+  border-color: white;
+  opacity: 0.4;
 }
 
 body .cover-container .jumbotron .container form button:hover {
   opacity: 1;
 }
 
+body .cover-container .jumbotron .container form button:active {
+  background-color: #2f00ff;
+  color: white;
+  border-color: white;
+}
+
+body .cover-container .jumbotron .container form button .btn-success:not(:disabled):not(.disabled):active {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
 body .cover-container .footer {
   width: 100%;
   height: 60px;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body .cover-container .footer .row {
@@ -82,49 +128,66 @@ body .cover-container .footer .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body .cover-container .footer .text-group {
+body .cover-container .footer .row .text-group {
   text-align: center;
-  font-family: "Zen Dots", cursive;
+  font-family: "Rock Salt", cursive;
   font-size: 18px;
-  color: #2A1852;
+  font-weight: 900;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body .cover-container .footer .icons {
+body .cover-container .footer .row .icons {
   text-align: center;
 }
 
-body .cover-container .footer .icons a:hover {
-  opacity: 0.6;
+body .cover-container .footer .row .icons a svg {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-bottom: 4px solid transparent;
+  padding: 5px 0;
+}
+
+body .cover-container .footer .row .icons a svg:hover {
+  fill: #2f00ff;
+  border-bottom: 4px solid #2f00ff;
+  color: #2f00ff;
 }
 
 body .cover-container #successfully p {
-  font-family: "Zen Dots", cursive;
-  font-size: 32px;
-  color: #040036;
+  font-family: "Poiret One", cursive;
+  font-size: 42px;
+  font-weight: 900;
+  color: #4419ff;
   margin-top: 30px;
 }
 
 body .cover-container #products-list h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poiret One", cursive;
   font-weight: 900;
-  color: #4D406B;
-  margin: 20px;
+  color: black;
+  margin-top: 20px;
 }
 
 body .cover-container #products-list .table-responsive {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-family: "Poiret One", cursive;
 }
 
 body .cover-container #products-list .table-responsive table {
+  background-color: rgba(68, 25, 255, 0.1);
   counter-reset: rowNumber;
 }
 
 body .cover-container #products-list .table-responsive table thead {
-  color: #4D406B;
-  font-size: 18px;
+  background-color: rgba(68, 25, 255, 0.8);
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 body .cover-container #products-list .table-responsive table tbody tr {
@@ -135,9 +198,9 @@ body .cover-container #products-list .table-responsive table tbody tr td {
   height: 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #4D406B;
+  color: black;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 body .cover-container #products-list .table-responsive table tbody tr td:first-child::before {
@@ -151,7 +214,7 @@ body .cover-container #products-list .table-responsive table tbody tr td img {
 
 body .cover-container #products-list h3 {
   font-family: "Zen Dots", cursive;
-  color: #4D406B;
+  color: #4d406b;
   margin: 20px;
 }
 /*# sourceMappingURL=index.css.map */

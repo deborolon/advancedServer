@@ -30,11 +30,15 @@ const sendProducts = async (products) => {
     from: "test.01090902@gmail.com",
     to: userEmail,
     subject: "Listado De Productos",
-    html: `<head><style>
-    h2{color: #040036;}
-    td{font-size: 14px; color: #040036; text-align:center;}
+    html: `<head>
+    <style>
+    h2{color: black;}
+    table{font-family: Verdana; color: black; background-color: #e0dbf2;}
+    td{font-size: 16px; text-align: center;}
+    th{font-size: 18px; font-weight: 900;}
     img{width: 50px; height: 50px;}
-    </style></head>
+    </style>
+    </head>
     <div>
     <h2>Listado de Productos:</h2>
     <table>
