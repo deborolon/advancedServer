@@ -32,7 +32,7 @@ app.set("view engine", "hbs");
 
 //MONGO DB CONFIG
 mongoose.connect(
-  "mongodb+srv://<username>:<password>@inventory-server.cdm6ich.mongodb.net/?retryWrites=true&w=majority",
+  "mongodb+srv://admin-01090902:01090902@desafizzmod.kfd82.mongodb.net/firstdb?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
