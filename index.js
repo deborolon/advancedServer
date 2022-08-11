@@ -63,9 +63,9 @@ app.post("/ingreso", async (req, res) => {
     let product = req.body;
     products.push(product);
     let val = await validation.validate(product);
-    if (products.length % 10 === 0) {
+    if (products.length !== 0) {
       await sendEmail.sendProducts(products);
-      console.log("SON 10");
+      console.log("Inventario enviado!");
     }
     if (val.result === true) {
       const newProduct = new model.product(product);
@@ -78,7 +78,7 @@ app.post("/ingreso", async (req, res) => {
         }
       });
     } else {
-      console.log("NO FUNCA");
+      console.log("Error");
     }
   } catch (error) {
     console.log(error);
